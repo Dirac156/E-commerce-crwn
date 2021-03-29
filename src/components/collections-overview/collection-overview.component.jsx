@@ -13,7 +13,7 @@ import "./collection-overview.styles.scss";
 const CollectionOverview = ({ collections }) => (
     <div className='collections-overview'>
     {collections.map(collection => (
-        <CollectionPreview key={collection.id} title={collection.title} items={collection.items} />
+        <CollectionPreview key={collection.id} title={collection.title} items={collection.items} routeName={collection.routeName}/>
     ))}
     </div> 
 )
